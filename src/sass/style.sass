@@ -1,6 +1,9 @@
+*
+    box-sizing: border-box
 body
     font-family: 'Roboto', sans-serif
     font-weight: 400
+    color: #363636
 .header
     display: flex
     align-items: center
@@ -59,4 +62,136 @@ body
     //padding-left: 50px
     //padding-right: 50px
     padding: 0 50px
-  
+
+.container
+    max-width: 1130px
+    margin: auto
+.film
+    padding-top: 80px
+    padding-bottom: 80px
+    border-bottom: 1px solid #D4D4D4
+    &-title
+        font-style: normal
+        font-weight: 900
+        font-size: 36px
+        line-height: 42px
+        margin-top: 0
+        margin-bottom: 16px
+    &-subtitle
+        display: block
+        color: #A5A5A5
+        font-size: 18px
+        line-height: 21px
+        margin-bottom: 32px
+    &-description
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 150%
+        color: #000000
+        max-width: 514px
+        margin-bottom: 50px
+    &-about
+        display: flex
+        margin-bottom: 50px
+        &-text
+            display: block
+            font-size: 16px
+            line-height: 19px
+            margin-bottom: 16px
+            &__bold
+                display: inline-block
+                width: 100px
+                vertical-align: top
+                
+    &-wrapper
+        display: flex
+    &-poster
+        border-top-right-radius: 5px
+        border-top-left-radius: 5px
+        width: 358px
+    &-trailer
+        display: flex
+        flex-direction: column
+        margin-right: 60px
+    &-button
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: #ffffff
+        border: 1px solid #D4D4D4
+        border-radius: 0px 0px 5px 5px
+        padding-bottom: 25px
+        padding-top: 25px
+        cursor: pointer
+        &__icon
+            margin-right: 14px
+    &-leftSide
+        margin-right: 40px
+    &-rating
+        display: flex
+        align-items: center
+        &__text
+            display: block
+            margin-bottom: 7px
+            font-size: 16px
+            line-height: 19px
+        &__title
+            font-weight: bold
+            font-size: 18px
+            line-height: 21px
+            margin-top: 0
+            margin-bottom: 12px
+        &__counter
+            padding: 34px 24px
+            border: 1px solid #5671F6
+            border-radius: 10px
+            font-size: 28px
+            line-height: 33px
+            font-style: normal
+            color: #5671F6
+            font-weight: bold
+            margin-right: 28px
+.cast
+    padding-top: 70px
+    padding-bottom: 100px
+.tabs
+    display: flex
+    align-items: center
+    margin-bottom: 60px
+.section-title
+    font-weight: normal
+    font-size: 24px
+    line-height: 28px
+    color: #A5A5A5
+    font-weight: 900
+    margin-right: 30px
+.section-title.active
+    color: #363636
+.card
+    display: flex
+    align-items: center
+    flex-basis: 25%
+    margin-bottom: 35px
+    &-image
+        width: 100px
+        height: 100px
+        object-fit: cover
+        border-radius: 50%
+        margin-right: 20px
+
+.name
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 19px
+    color: #5671F6
+    margin-top: 0
+    margin-bottom: 6px
+    &-en
+        color: #A5A5A5
+.tabs
+    &-content
+        display: flex
+        align-items: center
+        flex-wrap: wrap
