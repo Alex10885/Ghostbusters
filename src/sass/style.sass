@@ -4,10 +4,11 @@ body
     font-family: 'Roboto', sans-serif
     font-weight: 400
     color: #363636
+.no-scroll
+    overflow: hidden
 .header
     display: flex
     align-items: center
-    justify-content: space-between
     height: 104px
     padding-left: 34px
     border-bottom: 1px solid #D4D4D4
@@ -18,6 +19,11 @@ body
     background-color: #fff
     border: none
     cursor: pointer
+.m-menu
+    height: 100%
+    display: flex
+    align-items: center
+    flex-grow: 1
 .menu-line
     display: block
     width: 16px
@@ -56,8 +62,11 @@ body
 .button
     height: 100%
     cursor: pointer
+    &-next
+        display: none
     &-group
         height: 100%
+        display: flex;
 .sign-up
     color: #5671F6
     font-size: 18px
@@ -140,6 +149,7 @@ body
         padding-bottom: 25px
         padding-top: 25px
         color: #5671F6
+        text-decoration: none
         cursor: pointer
         &__icon
             margin-right: 14px
@@ -209,9 +219,15 @@ body
         color: #A5A5A5
 .tabs
     &-content
-        display: flex
+        display: none
         align-items: center
         flex-wrap: wrap
+        visibility: hidden
+        &.visible
+            display: flex
+            visibility: visible
+.tab
+    cursor: pointer
 .news
     background-color: #F3F3F3
     padding-top: 70px
