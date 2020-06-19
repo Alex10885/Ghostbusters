@@ -1,0 +1,125 @@
+// медия запросы адаптивка
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .card
+        &-image
+            width: 70px
+            height: 70px
+    .news-cardTitle
+        font-size: 13px
+    .searth-input
+        margin-left: 20px
+    .header
+        height: 90px
+        padding-left: 20px
+    .sign-up
+        padding-left: 20px
+        padding-right: 20px
+    .navigation
+        margin-right: 2%
+        &-link
+            margin-right: 10px
+            font-size: 16px
+    .line
+        margin-left: 20px
+@media (max-width: 991px)
+    .container
+        max-width: 760px
+    .navigation
+        display: none
+    .searth-input
+        margin-right: auto
+    .film
+        &-title
+            font-size: 24px
+            line-height: 1.4
+        &-subtitle
+            margin-bottom: 20px
+        &-description, &-about
+            margin-bottom: 30px
+        &-about-text__bold
+            display: block
+            margin-bottom: 10px
+    .card
+        flex-basis: 50%
+        &-image
+            width: 100px
+            height: 100px
+    .news-card
+        flex-basis: 48%
+        margin-bottom: 20px
+@media (max-width: 768px)
+    .container
+        max-width: 560px
+    .header
+        height: 80px
+    .film
+        padding-top: 50px
+        padding-bottom: 60px
+        &-wrapper
+            flex-wrap: wrap
+        &-text
+            order: -1
+            margin-bottom: 30px
+    .cast
+        padding-top: 50px
+        padding-bottom: 70px
+    .news
+        padding-top: 50px
+        padding-bottom: 70px
+    .mobile-buttons
+        display: block
+    .button-group
+        display: none
+    .searth-input
+        display: none
+    .line
+        display: none
+    .header
+        padding-right: 2.5%
+        padding-left: 2.5%
+@media (max-width: 576px)
+    .container
+        width: 95%
+    .film
+        &-title
+            font-size: 20px
+            line-height: 23px
+            margin-bottom: 12px
+        &-subtitle
+            font-size: 14px
+            line-height: 16px
+            margin-bottom: 26px
+        &-description
+            font-size: 14px
+            line-height: 16px
+            margin-bottom: 40px
+        &-about
+            flex-wrap: wrap
+            flex-direction: column
+            margin-bottom: 40px
+            &-text__bold
+                display: inline-block
+        &-trailer
+            margin-bottom: 30px
+        &-trailer,&-poster
+            width: 100%
+        &-text
+            order: 1
+            margin-bottom: 0
+    .card
+        flex-basis: 100%
+        margin-bottom: 20px
+        &-image
+            height: 60px
+            width: 60px
+    .tabs
+        margin-bottom: 35px
+    .cast
+        margin-bottom: 50px
+    .news-card
+        flex-basis: 100%
+   
+    
+
